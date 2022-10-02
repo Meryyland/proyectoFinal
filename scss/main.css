@@ -70,6 +70,7 @@ main {
 .headerGaleria {
   grid-area: headerGaleria;
   background-color: #210825;
+  color: #71b8a8;
   border: none;
   display: flex;
   flex-direction: row;
@@ -337,7 +338,17 @@ footer ul li {
   padding-right: 30px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1280px) {
+  .galería {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "headerGaleria headerGaleria headerGaleria headerGaleria" "img1 img2 img3 img4" "img5 img6 img7 img8" "img9 img10 img11 img12" "footerGaleria footerGaleria footerGaleria footerGaleria";
+  }
+}
+@media (min-width: 768px) {
   .galería {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -347,7 +358,7 @@ footer ul li {
     grid-template-areas: "headerGaleria headerGaleria headerGaleria" "img1 img2 img3" "img4 img6 img7" "img8 img9 img11" "img12 img13 img14" "footerGaleria footerGaleria footerGaleria";
   }
 }
-@media (max-width: 460px) {
+@media (min-width: 460px) {
   .galería {
     display: grid;
     grid-template-columns: 1fr 1fr;
