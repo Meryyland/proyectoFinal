@@ -498,55 +498,56 @@ main {
     }
 }
 
-
-
-.contacto {
-    display: flex;
-    align-content: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 450px;
-
-    .encabezadoContacto {
-        width: 600px;
-    }
-}
-
 .links {
     text-decoration: none;
     color: #78d5db;
 
 }
 
-.paginaContacto{
-                .header{
-
-                }
-                .cuerpoContacto{
-                                background-color: #210825;
-                                .encabezadoContacto{
-
-                                }
-                                .formularioContacto{
-                                                    background-color: #210825;
-                                                    border-color: #78d5db;
-                                                    button{
-                                                        .btn-boton {
-                                                            background-color: #210825;
-                                                            color: #210825;
-                                                        }
-                                                    }
-                                }
-                }
-                footer{
-
-                }
-
-}
-
-
-.col-12 {
+.cuerpo-contacto{
+    height: auto;
+    background-color: rgb(99, 177, 160);
     color: #210825;
+    legend{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        color: #210825;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .formulario{
+        margin-bottom: 15%;
+        .descripcion{
+            margin-left: 25%;
+            color: #210825;
+            font-size: 20px;
+            font-family:'Open Sans', sans-serif;
+        }
+        .form-control{
+        border-color:#210825;
+        border-width: 5px;
+        margin-left: 25%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        }
+        .submitbotton{
+            color: #210825;
+            border-color:#210825;
+            border-radius: 5px;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            margin-left: 70px;
+            padding: 7px;
+            margin-top: 5%;
+            &:hover {
+                    transform: scale(1.0);
+                    background-color: #402444;
+                    color: #3c9ca3;
+                    }
+        }
+    }
 }
 
 footer {

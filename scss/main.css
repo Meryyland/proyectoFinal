@@ -437,35 +437,55 @@ main {
   margin-right: auto;
 }
 
-.contacto {
-  display: flex;
-  align-content: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 450px;
-}
-.contacto .encabezadoContacto {
-  width: 600px;
-}
-
 .links {
   text-decoration: none;
   color: #78d5db;
 }
 
-.paginaContacto .cuerpoContacto {
-  background-color: #210825;
-}
-.paginaContacto .cuerpoContacto .formularioContacto {
-  background-color: #210825;
-  border-color: #78d5db;
-}
-.paginaContacto .cuerpoContacto .formularioContacto button .btn-boton {
-  background-color: #210825;
+.cuerpo-contacto {
+  height: auto;
+  background-color: rgb(99, 177, 160);
   color: #210825;
 }
-.col-12 {
+.cuerpo-contacto legend {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
   color: #210825;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.cuerpo-contacto .formulario {
+  margin-bottom: 15%;
+}
+.cuerpo-contacto .formulario .descripcion {
+  margin-left: 25%;
+  color: #210825;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.cuerpo-contacto .formulario .form-control {
+  border-color: #210825;
+  border-width: 5px;
+  margin-left: 25%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.cuerpo-contacto .formulario .submitbotton {
+  color: #210825;
+  border-color: #210825;
+  border-radius: 5px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  margin-left: 70px;
+  padding: 7px;
+  margin-top: 5%;
+}
+.cuerpo-contacto .formulario .submitbotton:hover {
+  transform: scale(1);
+  background-color: #402444;
+  color: #3c9ca3;
 }
 
 footer {
