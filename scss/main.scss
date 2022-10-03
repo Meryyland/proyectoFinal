@@ -158,26 +158,20 @@ main {
         color: #210825;
 }
   
+// no se me aplica el espaciado entre items
+
 .seccionVideos{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
-
 
 .studioVideo1 { 
         grid-area: studioVideo1; 
-        width:100%;
-        height: 100%;
-        align-items: stretch;
 }
   
 .studioVideo2 { 
         grid-area: studioVideo2; 
-        width:100%;
-        height: 100%;
-        align-items: stretch;
 }
 
 .studioFooter { 
@@ -516,26 +510,43 @@ main {
     .encabezadoContacto {
         width: 600px;
     }
-
-    .formulario {
-        line-height: 15px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-        color: #71b8a8;
-        width: 300px;
-
-        .itemsFormulario {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
-            color: #71b8a8;
-            background-color: #210825;
-        }
-    }
 }
 
 .links {
     text-decoration: none;
     color: #78d5db;
+
+}
+
+.paginaContacto{
+                .header{
+
+                }
+                .cuerpoContacto{
+                                background-color: #210825;
+                                .encabezadoContacto{
+
+                                }
+                                .formularioContacto{
+                                                    background-color: #210825;
+                                                    border-color: #78d5db;
+                                                    button{
+                                                        .btn-boton {
+                                                            background-color: #210825;
+                                                            color: #210825;
+                                                        }
+                                                    }
+                                }
+                }
+                footer{
+
+                }
+
+}
+
+
+.col-12 {
+    color: #210825;
 }
 
 footer {
